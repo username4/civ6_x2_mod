@@ -62,14 +62,14 @@ WHERE ModifierId = 'ROUGH_RIDER_BONUS_ON_HILLS';
 --Last Prophet
 --TODO maybe Prophet at start, but then name stupid? or spawn 9 apostles?
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 2
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_SCIENCE_PER_FOREIGN_CITY_FOLLOWING_RELIGION');
 
 --Madrasa
 --TODO faith bonus
 UPDATE Building_YieldChanges
-SET YieldChange = 14
+SET YieldChange = 6
 WHERE BuildingType = 'BUILDING_MADRASA';
 
 --Mamluk
@@ -77,28 +77,23 @@ WHERE BuildingType = 'BUILDING_MADRASA';
 
 --LEADER Saladin
 UPDATE ModifierArguments
-SET Value = 99
+SET Value = 20
 WHERE ModifierId = 'TRAIT_RELIGIOUS_BUILDING_DISCOUNT';
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 20
 WHERE (Name = 'Multiplier'
 AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_SCIENCE');
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 20
 WHERE (Name = 'Multiplier'
 AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_FAITH');
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 20
 WHERE (Name = 'Multiplier'
-AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE');--"CIVILIZATION_BRAZIL"  "TRAIT_CIVILIZATION_AMAZON"
-
-UPDATE ModifierArguments
-SET Value = Value * 10
-WHERE (Name = 'Amount'
-AND ModifierId LIKE '%AMAZON%');
+AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE');
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -106,6 +101,11 @@ AND ModifierId LIKE '%AMAZON%');
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+--TRAIT_CIVILIZATION_AMAZON
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE (Name = 'Amount'
+AND ModifierId LIKE '%AMAZON%');
 --MINAS_GERAES
 UPDATE Units
 SET Combat = 160
