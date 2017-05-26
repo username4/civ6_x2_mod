@@ -77,7 +77,7 @@ WHERE BuildingType = 'BUILDING_MADRASA';
 
 --LEADER Saladin
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 5
 WHERE ModifierId = 'TRAIT_RELIGIOUS_BUILDING_DISCOUNT';
 
 UPDATE ModifierArguments
