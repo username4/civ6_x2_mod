@@ -6,55 +6,51 @@
 
 --Founding Fathers
 UPDATE ModifierArguments
-SET Value = 1000
+SET Value = 200
 WHERE (Name = 'BonusRate'
 AND ModifierId LIKE '%BONUS_RATE%');
 
 --FILM_STUDIO
 UPDATE ModifierArguments
-SET Value = 1000
+SET Value = 200
 WHERE (Name = 'Modifier'
 AND ModifierId = 'FILMSTUDIO_ENHANCEDLATETOURISM');
 
 --P51    
 UPDATE Units
-SET BaseMoves = 24
+SET BaseMoves = 8
 WHERE UnitType = 'UNIT_AMERICAN_P51';
 
 UPDATE Units
-SET Combat = 130
+SET Combat = 90
 WHERE UnitType = 'UNIT_AMERICAN_P51';
 
 UPDATE Units
-SET RangedCombat = 130
+SET RangedCombat = 90
 WHERE UnitType = 'UNIT_AMERICAN_P51';
 
 UPDATE ModifierArguments
-SET Value = 500
-WHERE ModifierId = 'COMBAT_BONUS_HOME_CONTINENT_MODIFIER';
-
-UPDATE ModifierArguments
-SET Value = 500
+SET Value = 200
 WHERE ModifierId = 'MUSTANG_MORE_EXPERIENCE';
 
 
 --LEADER Teddy
 --Corollary
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 10
 WHERE ModifierId = 'COMBAT_BONUS_HOME_CONTINENT_MODIFIER';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 2
 WHERE ModifierId = 'TRAIT_NATIONAL_PARK_APPEAL_BONUS';
 
 --rough rider as replacement for cavalry  
 UPDATE Units
-SET Combat = 112
+SET Combat = 72
 WHERE UnitType = 'UNIT_AMERICAN_ROUGH_RIDER';
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 20
 WHERE ModifierId = 'ROUGH_RIDER_BONUS_ON_HILLS';
 
 ---------------------------------------------------------
