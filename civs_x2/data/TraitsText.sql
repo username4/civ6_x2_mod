@@ -53,7 +53,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_MADRASA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'The worship building for their Religion can be purchased by any player for just one-hundreth of the usual  [ICON_Faith] Faith cost.  This worship building is enhanced to add 100% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture output of Arabian cities.'
+SET Text = 'The worship building for their Religion can be purchased by any player for just one-20th of the usual  [ICON_Faith] Faith cost.  This worship building is enhanced to add 100% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture output of Arabian cities.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION';
 
